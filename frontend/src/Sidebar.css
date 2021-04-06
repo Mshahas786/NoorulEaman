@@ -1,0 +1,14 @@
+.Sidebar{
+  height: 100%;
+  width: 200px;
+  background-color: black;  
+}
+
+.SidebarNav{
+    /* right: ${({ sidebar }) => (sidebar ? '0' : '-100%')}; */
+    /* display: flex;
+   justify-content: center;
+   position: fixed; */
+    transition: 350ms;
+    z-index: 10;
+}

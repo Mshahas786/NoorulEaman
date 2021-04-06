@@ -1,0 +1,10 @@
+
+
+.wrapper .item{
+  min-width: 120px;
+  
+}
+
+.wrapper::-webkit-scrollbar{
+  width: 0;
+}
