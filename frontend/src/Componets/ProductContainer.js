@@ -1,4 +1,5 @@
 import React from 'react'
+import "./ProductContainer.css"
 import {
     Col,
     // Button,
@@ -11,9 +12,8 @@ import {
   import "./Style.css";
 const ProductContainer = () => {
     return (
-        <div className="">
-      <Col xs="8" className="bg-light float-right h-100">
-        <div className="wrapper d-flex overflow-auto mt-3">
+      <div  className="ProductContainer">
+        <div className="wrapper d-flex overflow-auto pt-2">
           <div className="item btn btn-outline-primary mr-2">mens wear</div>
           <div className="item btn btn-outline-primary mr-2">mens wear</div>
           <div className="item btn btn-outline-primary mr-2">mens wear</div>
@@ -91,8 +91,8 @@ const ProductContainer = () => {
 
           </CardColumns>
         </div>
-      </Col>
-    </div>
+      </div>
+    
     )
 }
 

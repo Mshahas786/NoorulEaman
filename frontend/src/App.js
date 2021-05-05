@@ -1,28 +1,17 @@
-import "./App.css"
-import Sidebar from "./Sidebar"
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Overview from './pages/Overview';
-import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './pages/Reports';
-import Team from './pages/Team';
-import ProductContainer from "./ProductContainer"
-import Cart from "./Cart"
+import React from "react"
+import Navbar from "./Componets/Navbar/Navbar"
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Sell from "./Componets/PageRouter/Sell";
+import Overview from "./Componets/PageRouter/Overview";
+import Sidebar from "./Componets/Sidebar/Sidebar";
 
 function App() {
-  return <div className="App">
+  return <div className="App"> 
     <Router>
-      <Sidebar />
-      <Switch>
-        <Route path='/overview' exact component={Overview} />
-        <Route path='/reports' exact component={Reports} />
-        <Route path='/reports/reports1' exact component={ReportsOne} />
-        <Route path='/reports/reports2' exact component={ReportsTwo} />
-        <Route path='/reports/reports3' exact component={ReportsThree} />
-        <Route path='/team' exact component={Team} />
-      </Switch>
+    <Navbar/>
+    <Route path="/" exact component={Sell} />
+    <Route path="/overview" exact component={Overview} />
     </Router>
-
-    {/* <ProductContainer/>
-    <Cart/> */}
     </div>
 }
 
