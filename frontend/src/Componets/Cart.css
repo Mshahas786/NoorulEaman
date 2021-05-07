@@ -1,6 +1,8 @@
 .cart{
     background-color: green;
-    height: 90vh;
+    height: 95vh;
+    position: fixed;
+    left: 0;
     width: 30%;
-    float: left;
+
 }
